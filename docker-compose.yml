@@ -1,0 +1,56 @@
+name: effecti-erp-everson
+
+networks:
+  effecti-erp-everson-network:
+    name: ${COMPOSE_PROJECT_NAME}-network
+    driver: bridge
+
+volumes:
+  db-volume:
+
+services:
+  app:
+    image: ${COMPOSE_PROJECT_NAME}-app
+    build:
+      context: .
+      dockerfile: docker/app/Dockerfile
+    container_name: '${COMPOSE_PROJECT_NAME}-app'
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+    networks:
+      - ${COMPOSE_PROJECT_NAME}-network
+  api:
+    image: ${COMPOSE_PROJECT_NAME}-api
+    build: ./docker/api
+    container_name: '${COMPOSE_PROJECT_NAME}-api'
+    ports: 
+      - "8080:80"
+    volumes:
+      - ./api:/var/www/html
+    networks:
+      - ${COMPOSE_PROJECT_NAME}-network
+    depends_on:
+      - db
+    environment:
+      DB_HOST: ${COMPOSE_PROJECT_NAME}-db
+      DB_PORT: ${DB_PORT}
+      DB_DATABASE: ${DB_DATABASE}
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+  db:
+    image: mysql:8.4
+    container_name: '${COMPOSE_PROJECT_NAME}-db'
+    ports: 
+      - "3306:3306"
+    networks:
+      - ${COMPOSE_PROJECT_NAME}-network
+    volumes:
+      - db-volume:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
