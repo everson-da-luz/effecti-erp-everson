@@ -1,0 +1,491 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1750111102165
+  modified: 1750111102165
+  description: ""
+collection:
+  - name: Effecti
+    meta:
+      id: fld_00222ffded354c2e998837abe86504ca
+      created: 1774546459455
+      modified: 1774546546781
+      sortKey: -1764177512233
+      description: ""
+    children:
+      - name: Service
+        meta:
+          id: fld_64678125c20b4f049ffda37e26204b1e
+          created: 1774645531778
+          modified: 1774645531778
+          sortKey: -1774645531778
+          description: ""
+        children:
+          - url: http://localhost:8080/api/services/1
+            name: Service - GET
+            meta:
+              id: req_46483c71a2c94362b0e97da636a3f130
+              created: 1774645082358
+              modified: 1774646119267
+              isPrivate: false
+              description: ""
+              sortKey: -1774645534663
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/services/
+            name: Service - GET All
+            meta:
+              id: req_f12fbf4f237345d9906511590b9e75c3
+              created: 1774645168985
+              modified: 1774645541778
+              isPrivate: false
+              description: ""
+              sortKey: -1774645534563
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/services
+            name: Service - POST
+            meta:
+              id: req_0264aa7506db479fbb2d0ca67df2cfab
+              created: 1774645593363
+              modified: 1774646132166
+              isPrivate: false
+              description: ""
+              sortKey: -1774645534463
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "Serviço 01",
+                	"base_monthly_value": 100
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/services/7
+            name: Service - PUT
+            meta:
+              id: req_8c03d91636dd430cb7161be5aee61930
+              created: 1774646051020
+              modified: 1774727855493
+              isPrivate: false
+              description: ""
+              sortKey: -1774645534363
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "Serviço 01 - Atualizado",
+                	"base_monthly_value": 200
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/services/1
+            name: Service - DELETE
+            meta:
+              id: req_eb095131f5794793a3dc6ec6090b6f72
+              created: 1774646222866
+              modified: 1774727860349
+              isPrivate: false
+              description: ""
+              sortKey: -1774645534263
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Client
+        meta:
+          id: fld_ac7cbca9b81e4bebb30f9a58bd8e13f5
+          created: 1774645552663
+          modified: 1774645552663
+          sortKey: -1774645552663
+          description: ""
+        children:
+          - url: http://localhost:8080/api/clients
+            name: Client - POST
+            meta:
+              id: req_36b1bf9db7f14656837d1161f57d7bdf
+              created: 1774546558841
+              modified: 1774645567988
+              isPrivate: false
+              description: ""
+              sortKey: -1774645558664
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "Cliente 01",
+                	"document": "00099999954",
+                	"email": "cliente01@gmail.com",
+                	"status": "Ativo"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/clients/1
+            name: Client - DELETE
+            meta:
+              id: req_d7d2c7e2f73b4a229a875df5e72f3b10
+              created: 1774547331961
+              modified: 1774727675086
+              isPrivate: false
+              description: ""
+              sortKey: -1774645558589
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/clients
+            name: Client - GET All
+            meta:
+              id: req_39c685244eb54ed78e7c2fbb41a427cb
+              created: 1774547487473
+              modified: 1774645576222
+              isPrivate: false
+              description: ""
+              sortKey: -1774645558714
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/clients/1
+            name: Client - UPDATE
+            meta:
+              id: req_9bc955ef978046b7a45dab2a57d8fec6
+              created: 1774548380684
+              modified: 1774727661033
+              isPrivate: false
+              description: ""
+              sortKey: -1774645558614
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "Cliente 01 - Atualizado",
+                	"document": "00099999954",
+                	"email": "cliente01@gmail.com",
+                	"status": "Ativo"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/clients/1
+            name: Client - GET
+            meta:
+              id: req_aeb2181b984b47b9b6638566d9e2dab8
+              created: 1774643351329
+              modified: 1774645574735
+              isPrivate: false
+              description: ""
+              sortKey: -1774645558764
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Contract
+        meta:
+          id: fld_dcd9f8a8ccfb459eb96bb159565413e5
+          created: 1774649526768
+          modified: 1774728037866
+          sortKey: -1773337043954.875
+          description: ""
+        children:
+          - url: http://localhost:8080/api/contracts/1
+            name: Contract - GET
+            meta:
+              id: req_55d9288bf3224ce796db8c4cd00245c9
+              created: 1774649526769
+              modified: 1774649721435
+              isPrivate: false
+              description: ""
+              sortKey: -1774645534663
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/contracts/
+            name: Contract - GET All
+            meta:
+              id: req_247b398618a44cda9237301710438537
+              created: 1774649526771
+              modified: 1774649737314
+              isPrivate: false
+              description: ""
+              sortKey: -1774645534563
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/contracts
+            name: Contract - POST
+            meta:
+              id: req_daf1767aea044973a10f747b18e9c961
+              created: 1774649526773
+              modified: 1774727890541
+              isPrivate: false
+              description: ""
+              sortKey: -1774645534463
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"client_id": 1,
+                	"start_date": "2025-08-27",
+                	"end_date": "2026-03-27",
+                	"status": "Ativo"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/contracts/16
+            name: Contract - PUT
+            meta:
+              id: req_b26a23d96fb44ce2a11141bdee1d2e8c
+              created: 1774649526774
+              modified: 1774727902637
+              isPrivate: false
+              description: ""
+              sortKey: -1774645534363
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"client_id": 1,
+                	"start_date": "2025-09-17",
+                	"end_date": "2026-03-27",
+                	"status": "Cancelado"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/contracts/1
+            name: Contract - DELETE
+            meta:
+              id: req_94ab009abd564f02a07e46a576a97680
+              created: 1774649526776
+              modified: 1774727923290
+              isPrivate: false
+              description: ""
+              sortKey: -1774645534263
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Contract Item
+        meta:
+          id: fld_de000bcacbbf4039b9b9660c8388d4d7
+          created: 1774727992755
+          modified: 1774728036133
+          sortKey: -1772028556131.75
+          description: ""
+        children:
+          - url: http://localhost:8080/api/contracts/items/1
+            name: Contract Item - DELETE
+            meta:
+              id: req_5d00262e5900486b858bde401e5c89c0
+              created: 1774728002080
+              modified: 1774728312984
+              isPrivate: false
+              description: ""
+              sortKey: -1774728002080
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/contracts/1/items
+            name: Contract Item - POST
+            meta:
+              id: req_39b34c0c36404ba3b7eeed4a1983fbe5
+              created: 1774728081666
+              modified: 1774728219715
+              isPrivate: false
+              description: ""
+              sortKey: -1774728081666
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"service_id": 1,
+                	"quantity": 1,
+                	"unit_value": 100,
+                	"discount_percent": 0
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.2.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1750111119054
+    modified: 1750111119054
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1750111118949
+    modified: 1750111118949
+    isPrivate: false
