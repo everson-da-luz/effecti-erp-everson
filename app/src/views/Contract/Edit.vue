@@ -41,7 +41,7 @@
                     </select>
                 </div>
                 <div class="mb-3">
-                    <button type="button" @click="saveContract" class="btn btn-success me-3">Salvar</button>
+                    <button type="button" @click="updateContract" class="btn btn-success me-3">Salvar</button>
                     <router-link to="/contratos" class="btn btn-secondary">Voltar</router-link>
                 </div>
             </div>
